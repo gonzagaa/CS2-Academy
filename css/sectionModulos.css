@@ -1,5 +1,5 @@
 #modulos {
-    background: var(--purple-black);
+    background: #050505;
     overflow: hidden;
   
     position: relative;
@@ -30,7 +30,6 @@
 
 #modulos .slide {
     padding: 2rem 0;
-    background-color: var(--purple-black);
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -91,17 +90,17 @@
 
 #modulos .content .cards .card {
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 100%;
 
     box-shadow:  10px 10px 19px #0a0013,
              -10px -10px 19px #0e0019;
 
-    background: rgba(24, 3, 41, 0.486);
+    background: rgba(16, 16, 16, 0.308);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(12, 0, 22, 0.3);
+    border: 2px solid rgba(46, 46, 46, 0.3);
 }
 
 #modulos .content h3 {
@@ -112,7 +111,7 @@
 }
 
 #modulos .content p {
-    color: #6c5580;
+    color: #838383;
     font-size: 1.6rem;
     font-weight: 300;
 }
@@ -150,12 +149,14 @@
     section#modulos .slide.um {
         align-items: start;
         animation: slideDesktop 40s infinite linear;
+        mask-image: linear-gradient(to right ,#fff, transparent 65%);
     }
 
     section#modulos .slide.dois {
         align-items: end;
 
         animation: slideDesktopInvert 40s infinite linear;
+        mask-image: linear-gradient(to left ,#fff, transparent 65%);
     }
 
     section#modulos .slide-content:before,
@@ -170,14 +171,14 @@
     
     section#modulos .slide-content:before {
         top: 0;
-        background: linear-gradient(to top, rgba(255, 255, 255, 0), #0C0016);
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), #050505);
         left: 0;
     }
     
     section#modulos .slide-content:after {
         top: initial;
         bottom: 0;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0C0016);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #050505);
         left: 0;
     }
 
@@ -189,10 +190,6 @@
     section#modulos .wrapper {
         position: sticky;
         top: 0;
-    }
-
-    section#modulos .content {
-        
     }
 
     section#modulos .content h2 {
@@ -217,7 +214,7 @@
 
     section#modulos .content .cards .card {
         width: 100%;
-        border-bottom: 5px solid rgba(27, 3, 52, 0.401);
+        border-bottom: 5px solid rgba(43, 43, 43, 0.401);
         padding: 3rem;
 
         display: flex;
@@ -231,24 +228,6 @@
 
         display: flex;
         justify-content: center;
-    }
-
-    section#modulos .content .card-container span {
-        font-size: 15rem;
-        background: linear-gradient(to bottom, #ab00e44e 0%, #3701616e 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-        
-        position: absolute;
-        top: -30%;
-        left: -7%;
-    }
-
-    section#modulos .content .card-container:nth-child(2) span,
-    section#modulos .content .card-container:nth-child(4) span {
-        left: initial;
-        right: -7%;
     }
 
 }
