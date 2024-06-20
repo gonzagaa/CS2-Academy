@@ -28,7 +28,7 @@
 
   left: 50%;
 
-  background: #160034;
+  background: #0300346c;
 
   overflow: hidden;
 
@@ -50,7 +50,7 @@
 
   left: 0;
 
-  background: linear-gradient(to bottom, transparent, #8000E4);
+  background: linear-gradient(to bottom, transparent, #00418c);
 
   -webkit-animation: drop 7s 0s infinite;
 

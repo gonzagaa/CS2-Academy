@@ -1,0 +1,271 @@
+#especialista {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #010422, #010422, #010422);
+    z-index: 120;
+
+    user-select: none;
+    padding-block: 4rem;
+}
+
+#especialista::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #00000000, #16b5ff, #00000000);
+}
+
+#especialista .blush {
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(#1557c1, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#especialista img.mibr {
+    position: absolute;
+    width: 150%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: linear-gradient(to bottom, #000, transparent);
+    opacity: 1;
+}
+
+#especialista img.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .5;
+    mix-blend-mode: color-burn;
+}
+
+#especialista img.star {
+    position: absolute;
+    width: 3%;
+    opacity: .5;
+    filter: blur(3px);
+}
+
+#especialista img.star.um {
+    top: 30%;
+    left: 30%;
+}
+
+#especialista img.star.dois {
+    top: 40%;
+    right: 30%;
+}
+
+#especialista .content {
+    position: relative;
+    z-index: 4;
+}
+
+#especialista header {
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+#especialista header img.smallLogo {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+#especialista header h2 {
+    color: #f2f2f2;
+    font-size: 3rem;
+    font-family: var(--Korataki);
+
+    margin-bottom: 3rem;
+}
+
+#especialista header h2 span {
+    background: linear-gradient(to right, #F59401 0%, #F9D40B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--Korataki);
+}
+
+#especialista .image {
+    position: relative;
+}
+
+#especialista .image img.texxas {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, #000 20%, #00000000);
+    filter: drop-shadow(30px 30px 20px #020512); 
+}
+
+#especialista .image img.logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 5%;
+    width: 100%;
+    opacity: .05;
+}
+
+#especialista .image h2 {
+    font-family: var(--Korataki);
+    font-size: 3rem;
+    color: #fff;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10%;
+}
+
+#especialista .image .nomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 23%;
+    z-index: -1;
+}
+
+#especialista .image .nomes h3 {
+    font-family: var(--Korataki);
+    font-size: 3rem;
+
+    color: transparent;
+    -webkit-text-stroke-width: .001px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#especialista .image .nomes h3:nth-child(1) {
+    opacity: .1;
+}
+
+#especialista .image .nomes h3:nth-child(2) {
+    opacity: .07;
+}
+
+#especialista .image .nomes h3:nth-child(3) {
+    opacity: .05;
+}
+
+#especialista .image .nomes h3:nth-child(4) {
+    opacity: .02;
+}
+
+#especialista .image .nomes h3:nth-child(5) {
+    opacity: .01;
+}
+
+#especialista .image .conquistas p {
+    font-size: 1.8rem;
+    color: #636e85;
+}
+
+#especialista .image .conquistas p span {
+    background: linear-gradient(to right, #F59401 0%, #F9D40B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--Korataki);
+}
+
+@media (min-width: 1080px) {
+    section#especialista {
+        height: 100vh;
+    }   
+
+    section#especialista .blush {
+        width: 1000px;
+        height: 1000px;
+        top: -50%;
+        left: initial;
+        right: -50rem;
+        transform: initial;
+        background: radial-gradient(#033c97, transparent 50%);
+    }
+
+    section#especialista .wrapper .content {
+        display: grid;
+        align-items: center;
+    }
+
+    section#especialista header {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    section#especialista header h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    section#especialista .image img.texxas {
+        width: 45%;
+    }
+
+    section#especialista .image img.logo {
+        opacity: .04;
+    }
+
+    section#especialista .image h2 {
+        font-size: 7rem;
+    }
+
+    section#especialista .image .nomes h3 {
+        font-size: 7rem;
+    }
+
+    section#especialista .wrapper .conquistas p {
+        position: absolute;
+        width: 20%;
+
+        background: rgba(1, 1, 1, 0.09);
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border: 2px solid #181818;
+        color: #6b6b6b;    
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    section#especialista .conquistas p span {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    section#especialista .conquistas p:nth-child(1) {
+        top: 30%;
+        left: 15%;
+    }
+
+    section#especialista .conquistas p:nth-child(2) {
+        top: 40%;
+        right: 12%;
+    }
+
+    section#especialista .conquistas p:nth-child(3) {
+        top: 60%;
+        left: 8%;
+    }
+}

@@ -16,6 +16,11 @@
   src: url(../fonts/Inter-V.ttf);
 }
 
+@font-face {
+  font-family: 'Korataki';
+  src: url(../fonts/Korataki\ Regular.ttf);
+}
+
 :root {
     font-size: 62.5%;
 
@@ -29,6 +34,7 @@
 
     --interV: 'interV';
     --Alternate: 'Alternate';
+    --Korataki: 'Korataki'
 }  
 
 html {
@@ -41,11 +47,12 @@ html {
     height: 100%;
     text-align: center;
     background-color: var(--black-900);
+
   }
 
   body {
     cursor: none;
-    background-color: var(--black-900);
+    background-color: #000000;
   }
 
   .cursor-dot {
